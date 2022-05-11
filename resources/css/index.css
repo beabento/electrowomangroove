@@ -40,7 +40,7 @@ li {
     align-content: center;
 }
 
-li:hover {
+li:active {
     transform: translate(5px, 5px);
     filter: drop-shadow(3px 3px 0px);
 }
