@@ -7,6 +7,10 @@
     --red: #ef005d;
 }
 
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 header {
     overflow: hidden;
 }
@@ -21,16 +25,15 @@ nav {
     padding: 10px;
 }
 
-ul {
+nav ul {
     justify-content: center;
     display: flex;
     padding: 0;
     margin: 0px;
 }
 
-li {
+nav li {
     display: inline;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     list-style: none;
     background-color: var(--blue-1);
     padding: 10px;
@@ -40,18 +43,18 @@ li {
     align-content: center;
 }
 
-li:active {
+nav li:active {
     transform: translate(5px, 5px);
     filter: drop-shadow(3px 3px 0px);
 }
 
-li a {
+nav li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-li a:hover {
+nav li a:hover {
     color: black;
 }
 
@@ -106,7 +109,6 @@ main.noticias-bloco {
     max-width: 800px;
     padding: 30px;
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .noticia img {
@@ -116,10 +118,13 @@ main.noticias-bloco {
 
 /*SHOWS*/
 
-main.shows {
+main.shows,
+main.musica{
     padding: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 table {
@@ -128,10 +133,10 @@ table {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     border: none;
+    display: block;
 }
 
 th {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
 }
 
@@ -143,4 +148,42 @@ td {
     padding: 20px;
     border: none;
 
+}
+
+.showsnewsletter {
+    background-color: var(--pink);
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+form {
+    font-weight: bold;
+}
+
+ul.stream {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    height: 150px;
+    margin: 0;
+    font-weight: 0.6;
+}
+
+ul.stream li {
+    height: 30px;
+}
+
+ul.stream li a {
+    color: white;
+    text-transform: uppercase;
+    transition: 0.1s;
+}
+
+ul.stream li a:hover {
+    font-size: 1.1em;
+    color: var(--pink);
 }
