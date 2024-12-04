@@ -1,1 +1,1 @@
-Projeto de website, um exercício fruto dos meus estudos em frontend pelo Codecademy.
+Projeto de website, um exercício fruto dos meus estudos em frontend pelo Codecademy. O site está incompleto ainda, pois a banda titular encerrou suas atividades. Porém, ano que vem pretendo retomar só para praticar (irei cursar a disciplina "Programação Web", optativa do meu curso Ciência de Dados para Negócios).
